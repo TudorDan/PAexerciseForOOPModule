@@ -3,7 +3,7 @@ package com.codecool;
 public class Organizer extends Employee {
 
     public Organizer() {
-        setKind(EmployeeKind.ORGANIZER);
+        setKind(EmployeeType.ORGANIZER);
     }
 
     protected boolean areEnoughHelpers(Event event) {

@@ -1,13 +1,13 @@
 package com.codecool;
 
-public enum EmployeeKind {
+public enum EmployeeType {
     ORGANIZER("Organizer"),
     CHIEFORGANIZER("Chief Organizer"),
     HELPER("Helper");
 
     private final String name;
 
-    private EmployeeKind(String name) {
+    private EmployeeType(String name) {
         this.name = name;
     }
 

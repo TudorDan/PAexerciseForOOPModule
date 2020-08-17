@@ -9,7 +9,7 @@ public class Helper extends Employee {
     int ordinal = getRandomNumberInRange(0, 1);
 
     public Helper() {
-        setKind(EmployeeKind.HELPER);
+        setKind(EmployeeType.HELPER);
         this.preference = Preference.values()[ordinal];
     }
 

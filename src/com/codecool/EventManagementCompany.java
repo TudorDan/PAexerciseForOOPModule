@@ -67,13 +67,13 @@ public final class EventManagementCompany {
         int chiefOrganizerNr = 0;
         List<Employee> tempEmployeeList = new ArrayList<>(availableEmployees);
         for (Employee employee : tempEmployeeList) {
-            if (employee.getKind() == EmployeeKind.HELPER && helpersNr < 10) {
+            if (employee.getKind() == EmployeeType.HELPER && helpersNr < 10) {
                 allocateEmployee(employee, event);
                 helpersNr++;
-            } else if (employee.getKind() == EmployeeKind.ORGANIZER && organizersNr < 2) {
+            } else if (employee.getKind() == EmployeeType.ORGANIZER && organizersNr < 2) {
                 allocateEmployee(employee, event);
                 organizersNr++;
-            } else if (employee.getKind() == EmployeeKind.CHIEFORGANIZER && chiefOrganizerNr < 1) {
+            } else if (employee.getKind() == EmployeeType.CHIEFORGANIZER && chiefOrganizerNr < 1) {
                 allocateEmployee(employee, event);
                 chiefOrganizerNr++;
             }

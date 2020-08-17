@@ -65,7 +65,7 @@ public abstract class Event {
     public int getHelpersNumber() {
         int counter = 0;
         for (Employee employee : staff) {
-            if (employee.getKind() == EmployeeKind.HELPER) {
+            if (employee.getKind() == EmployeeType.HELPER) {
                 counter++;
             }
         }
@@ -75,7 +75,7 @@ public abstract class Event {
     public int getOrganizers() {
         int counter = 0;
         for (Employee employee : staff) {
-            if (employee.getKind() == EmployeeKind.ORGANIZER) {
+            if (employee.getKind() == EmployeeType.ORGANIZER) {
                 counter++;
             }
         }
@@ -84,7 +84,7 @@ public abstract class Event {
 
     public ChiefOrganizer getChiefOrganizer() {
         for (Employee employee : staff) {
-            if (employee.getKind() == EmployeeKind.CHIEFORGANIZER) {
+            if (employee.getKind() == EmployeeType.CHIEFORGANIZER) {
                 return (ChiefOrganizer) employee;
             }
         }
@@ -101,7 +101,7 @@ public abstract class Event {
             while(elapsed < duration) {
                 setElapsed(elapsed + 1);
                 for (Employee employee : staff) {
-                    if (employee.getKind() == EmployeeKind.HELPER) {
+                    if (employee.getKind() == EmployeeType.HELPER) {
                         Helper helper = (Helper) employee;
                         helper.performActivity(this);
                     }

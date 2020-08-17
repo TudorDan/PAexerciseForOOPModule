@@ -2,7 +2,7 @@ package com.codecool;
 
 public class ChiefOrganizer extends Employee {
     public ChiefOrganizer() {
-        setKind(EmployeeKind.CHIEFORGANIZER);
+        setKind(EmployeeType.CHIEFORGANIZER);
     }
 
     private boolean areEnoughOrganizers(Event event) {
@@ -13,7 +13,7 @@ public class ChiefOrganizer extends Employee {
     private boolean isEverythingSet(Event event) {
         if (areEnoughOrganizers(event)) {
             for (Employee employee : event.getStaff()) {
-                if (employee.getKind() == EmployeeKind.ORGANIZER) {
+                if (employee.getKind() == EmployeeType.ORGANIZER) {
                     Organizer organizer = (Organizer) employee;
                     if (organizer.areEnoughHelpers(event) && organizer.isAppropriateCatering()) {
                         System.out.println("Chief Organizer " + this.getId() + ": everything is set, event is ready!");
