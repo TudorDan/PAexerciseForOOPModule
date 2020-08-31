@@ -1,5 +1,10 @@
 package com.codecool;
 
+import com.codecool.employees.Employee;
+import com.codecool.events.Event;
+import com.codecool.utilities.EmployeeType;
+import com.codecool.utilities.EventStatus;
+
 import java.util.ArrayList;
 import java.util.List;
 

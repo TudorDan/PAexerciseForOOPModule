@@ -1,4 +1,11 @@
-package com.codecool;
+package com.codecool.events;
+
+import com.codecool.employees.ChiefOrganizer;
+import com.codecool.employees.Employee;
+import com.codecool.employees.Helper;
+import com.codecool.utilities.EmployeeType;
+import com.codecool.utilities.EventStatus;
+import com.codecool.utilities.EventType;
 
 import java.util.ArrayList;
 import java.util.List;

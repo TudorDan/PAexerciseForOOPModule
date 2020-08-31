@@ -1,5 +1,15 @@
 package com.codecool;
 
+import com.codecool.employees.ChiefOrganizer;
+import com.codecool.employees.Employee;
+import com.codecool.employees.Helper;
+import com.codecool.employees.Organizer;
+import com.codecool.events.CocktailParty;
+import com.codecool.events.Conference;
+import com.codecool.events.Event;
+import com.codecool.events.Wedding;
+import com.codecool.utilities.EventStatus;
+
 import java.util.List;
 
 public class Main {

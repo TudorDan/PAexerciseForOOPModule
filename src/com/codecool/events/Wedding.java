@@ -1,4 +1,6 @@
-package com.codecool;
+package com.codecool.events;
+
+import com.codecool.utilities.EventType;
 
 public class Wedding extends Event {
     public Wedding(String name) {

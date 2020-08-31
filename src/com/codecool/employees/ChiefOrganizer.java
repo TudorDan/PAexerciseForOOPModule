@@ -1,4 +1,8 @@
-package com.codecool;
+package com.codecool.employees;
+
+import com.codecool.utilities.EmployeeType;
+import com.codecool.events.Event;
+import com.codecool.utilities.EventStatus;
 
 public class ChiefOrganizer extends Employee {
     public ChiefOrganizer() {

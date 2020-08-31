@@ -1,4 +1,9 @@
-package com.codecool;
+package com.codecool.employees;
+
+import com.codecool.utilities.EmployeeType;
+import com.codecool.events.Event;
+import com.codecool.utilities.EventType;
+import com.codecool.utilities.Preference;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.codecool;
+package com.codecool.utilities;
 
 public enum Preference {
     SMOKE("smokes"),

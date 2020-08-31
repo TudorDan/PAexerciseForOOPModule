@@ -1,4 +1,7 @@
-package com.codecool;
+package com.codecool.employees;
+
+import com.codecool.utilities.EmployeeType;
+import com.codecool.events.Event;
 
 public class Organizer extends Employee {
 

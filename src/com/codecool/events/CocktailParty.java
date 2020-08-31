@@ -1,4 +1,6 @@
-package com.codecool;
+package com.codecool.events;
+
+import com.codecool.utilities.EventType;
 
 public class CocktailParty extends Event {
     public CocktailParty(String name) {
